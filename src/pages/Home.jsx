@@ -20,11 +20,13 @@ function Slideshow() {
     return () => clearInterval(timer);
   }, []);
   return (
+    <div className="slideshow-box">
     <img
       src={images[index]}
       alt={`RIPE event ${index + 1}`}
-      style={{width:'100%', height:'420px', objectFit:'circle', borderRadius:'8px', boxShadow:'0 4px 18px #0002'}}
-    />
+      className="slideshow-img"
+      />
+    </div>
   );
 }
 
