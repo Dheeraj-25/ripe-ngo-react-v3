@@ -23,7 +23,7 @@ function Slideshow() {
     <img
       src={images[index]}
       alt={`RIPE event ${index + 1}`}
-      style={{width:'100%', height:'320px', objectFit:'cover', borderRadius:'12px', boxShadow:'0 2px 12px #0001'}}
+      style={{width:'100%', height:'420px', objectFit:'box', borderRadius:'25px', boxShadow:'0 4px 18px #0002'}}
     />
   );
 }
@@ -45,14 +45,38 @@ export default function Home(){
               <Link to="/donate" className="btn cta">Donate Now</Link>
             </div>
             <div className="kpis">
-              {[
-                ['35k+','People reached'],
-                ['180+','Villages served'],
-                ['20+','Years of service'],
-                ['1200+','Volunteers mobilized']
-              ].map(([n,c]) => (
-                <div className="kpi" key={n}><div className="num">{n}</div><div className="cap">{c}</div></div>
-              ))}
+              <div className="kpi">
+                <div className="num">2,700</div>
+                <div className="cap">School children<br/>educated</div>
+              </div>
+              <div className="kpi">
+                <div className="num">5,000</div>
+                <div className="cap">Women empowered through SHGs and livelihood training</div>
+              </div>
+              <div className="kpi">
+                <div className="num">1,200</div>
+                <div className="cap">Farmers adopted natural and organic farming practices</div>
+              </div>
+              <div className="kpi">
+                <div className="num">1,279</div>
+                <div className="cap">Youth and women trained in vocational skills</div>
+              </div>
+              <div className="kpi">
+                <div className="num">50</div>
+                <div className="cap">Villages benefited from improved irrigation systems</div>
+              </div>
+              <div className="kpi">
+                <div className="num">100</div>
+                <div className="cap">Grassroots institutions strengthened through capacity building</div>
+              </div>
+              <div className="kpi">
+                <div className="num">10,000</div>
+                <div className="cap">People reached through WASH and hygiene awareness</div>
+              </div>
+              <div className="kpi">
+                <div className="num">20</div>
+                <div className="cap">FPOs formed to support collective farming and marketing</div>
+              </div>
             </div>
           </div>
           <div className="media">
