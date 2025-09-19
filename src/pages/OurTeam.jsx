@@ -24,7 +24,7 @@ const team = [
     social: {}
   },
   {
-    name: 'Narakala Muni Varshini',
+    name: 'Varshini',
     title: 'Coordinator',
     img: '',
     desc: 'Role/Area',
@@ -32,7 +32,7 @@ const team = [
     social: {}
   },
   {
-    name: 'Narakala Muni Hemanth',
+    name: 'Hemanth',
     title: 'Coordinator',
     img: '',
     desc: 'Role/Area',
@@ -40,7 +40,7 @@ const team = [
     social: {}
   },
   {
-    name: 'Narakala Dheeraj Muni',
+    name: 'Dheeraj',
     title: 'Coordinator',
     img: '',
     desc: 'Role/Area',
@@ -48,7 +48,7 @@ const team = [
     social: {}
   },
   {
-    name: 'Narakala Likith Muni',
+    name: 'Likith',
     title: 'Coordinator',
     img: '',
     desc: 'Role/Area',
