@@ -6,7 +6,7 @@ export default function Navbar(){
     <div className="nav">
       <div className="container inner">
         <Link to="/" className="brand">
-          <img className="logo" src="/RIPE_Logo_new.svg" alt="RIPE logo"/>
+          <img className="logo" src="public/RIPE_Logo_new.svg" alt="RIPE logo"/>
           <span>RIPE</span>
         </Link>
         <nav className="menu">
