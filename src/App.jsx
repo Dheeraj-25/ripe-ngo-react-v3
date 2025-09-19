@@ -10,7 +10,9 @@ const Impact = lazy(()=>import('./pages/Impact.jsx'))
 const Transparency = lazy(()=>import('./pages/Transparency.jsx'))
 const Stories = lazy(()=>import('./pages/Stories.jsx'))
 const Contact = lazy(()=>import('./pages/Contact.jsx'))
+
 const Donate = lazy(()=>import('./pages/Donate.jsx'))
+const OurTeam = lazy(()=>import('./pages/OurTeam.jsx'))
 
 export default function App(){
   return (
@@ -19,11 +21,9 @@ export default function App(){
       <Suspense fallback={<div className="container" style={{padding:'40px 0'}}>Loading…</div>}>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/programs" element={<Programs/>}/>
-          <Route path="/impact" element={<Impact/>}/>
           <Route path="/transparency" element={<Transparency/>}/>
           <Route path="/stories" element={<Stories/>}/>
+          <Route path="/ourteam" element={<OurTeam/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/donate" element={<Donate/>}/>
         </Routes>

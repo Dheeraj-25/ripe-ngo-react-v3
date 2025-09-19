@@ -10,11 +10,9 @@ export default function Navbar(){
           <span>RIPE</span>
         </Link>
         <nav className="menu">
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/programs">Programs</NavLink>
-          <NavLink to="/impact">Impact</NavLink>
           <NavLink to="/stories">Stories</NavLink>
           <NavLink to="/transparency">Transparency</NavLink>
+          <NavLink to="/ourteam">Our Team</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <Link to="/donate" className="btn cta">Donate</Link>
         </nav>
