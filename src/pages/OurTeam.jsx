@@ -5,7 +5,7 @@ const team = [
   {
     name: ' Narakala Muni Mohan',
     title: 'Founder',
-    img: '/public/mohan3.jpg', // Add founder image URL here
+    img: '/mohan3.jpg', // Add founder image URL here
     desc: 'Brief description about the founder and their vision for RIPE.',
     className: 'founder',
     social: {
@@ -18,7 +18,7 @@ const team = [
   {
     name: 'Ande Kalavathi',
     title: 'Secretary',
-    img: '/public/Kalavathi1.jpg', // Add secretary image URL here
+    img: '/Kalavathi1.jpg', // Add secretary image URL here
     desc: 'Brief description about the secretary and their role at RIPE.',
     className: 'secretary',
     social: {}
@@ -26,7 +26,7 @@ const team = [
   {
     name: 'B Ravindranath Reddi',
     title: 'President',
-    img: '/public/Ravindra.png', // Add secretary image URL here
+    img: '/Ravindra.png', // Add secretary image URL here
     desc: 'Brief description about the secretary and their role at RIPE.',
     className: 'secretary',
     social: {}
@@ -34,7 +34,7 @@ const team = [
   {
     name: 'K Venkata Narayana',
     title: 'Treasurer',
-    img: '/public/venkataNarayana.png', // Add secretary image URL here
+    img: '/venkataNarayana.png', // Add secretary image URL here
     desc: 'Brief description about the secretary and their role at RIPE.',
     className: 'secretary',
     social: {}
@@ -50,7 +50,7 @@ const team = [
   {
     name: 'Hemanth',
     title: 'Compliance',
-    img: '/public/hemant.jpg',
+    img: '/hemant.jpg',
     desc: 'Volunteer',
     className: 'coordinator',
     social: {}
@@ -58,7 +58,7 @@ const team = [
   {
     name: 'Dheeraj',
     title: 'Development',
-    img: '/public/dheeraj.jpg',
+    img: '/dheeraj.jpg',
     desc: 'Volunteer',
     className: 'coordinator',
     social: {}
@@ -66,7 +66,7 @@ const team = [
   {
     name: 'Likith',
     title: 'Technical',
-    img: '/public/likith.jpg',
+    img: '/likith.jpg',
     desc: 'Volunteer',
     className: 'coordinator',
     social: {}
