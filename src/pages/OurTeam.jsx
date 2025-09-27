@@ -5,7 +5,7 @@ const team = [
   {
     name: ' Narakala Muni Mohan',
     title: 'Founder',
-    img: '', // Add founder image URL here
+    img: '/public/mohan3.jpg', // Add founder image URL here
     desc: 'Brief description about the founder and their vision for RIPE.',
     className: 'founder',
     social: {
@@ -18,49 +18,68 @@ const team = [
   {
     name: 'Ande Kalavathi',
     title: 'Secretary',
-    img: '', // Add secretary image URL here
+    img: '/public/Kalavathi1.jpg', // Add secretary image URL here
+    desc: 'Brief description about the secretary and their role at RIPE.',
+    className: 'secretary',
+    social: {}
+  },
+  {
+    name: 'B Ravindranath Reddi',
+    title: 'President',
+    img: '/public/Ravindra.png', // Add secretary image URL here
+    desc: 'Brief description about the secretary and their role at RIPE.',
+    className: 'secretary',
+    social: {}
+  },
+  {
+    name: 'K Venkata Narayana',
+    title: 'Treasurer',
+    img: '/public/venkataNarayana.png', // Add secretary image URL here
     desc: 'Brief description about the secretary and their role at RIPE.',
     className: 'secretary',
     social: {}
   },
   {
     name: 'Varshini',
-    title: 'Coordinator',
+    title: 'Operations',
     img: '',
-    desc: 'Role/Area',
+    desc: 'Volunteer',
     className: 'coordinator',
     social: {}
   },
   {
     name: 'Hemanth',
-    title: 'Coordinator',
-    img: '',
-    desc: 'Role/Area',
+    title: 'Compliance',
+    img: '/public/hemant.jpg',
+    desc: 'Volunteer',
     className: 'coordinator',
     social: {}
   },
   {
     name: 'Dheeraj',
-    title: 'Coordinator',
-    img: '',
-    desc: 'Role/Area',
+    title: 'Development',
+    img: '/public/dheeraj.jpg',
+    desc: 'Volunteer',
     className: 'coordinator',
     social: {}
   },
   {
     name: 'Likith',
-    title: 'Coordinator',
-    img: '',
-    desc: 'Role/Area',
+    title: 'Technical',
+    img: '/public/likith.jpg',
+    desc: 'Volunteer',
     className: 'coordinator',
     social: {}
   },
 ];
 
+
 export default function OurTeam() {
   const founder = team[0];
   const secretary = team[1];
-  const coordinators = team.slice(2);
+  const president = team[2];
+  const treasurer = team[3];
+  const coordinators = team.slice(4);
   // Helper to chunk coordinators into rows of 2
   const chunkedCoordinators = [];
   for (let i = 0; i < coordinators.length; i += 2) {
@@ -92,7 +111,7 @@ export default function OurTeam() {
             )}
           </div>
         </div>
-        {/* Secretary Card */}
+        {/* Secretary, President, Treasurer Cards */}
         <div className="team-list">
           <div className={`team-card ${secretary.className}`}>
             <div className="team-img-wrap">
@@ -112,6 +131,50 @@ export default function OurTeam() {
                   {secretary.social.twitter && <a href={secretary.social.twitter} target="_blank" rel="noopener noreferrer">TW</a>}
                   {secretary.social.linkedin && <a href={secretary.social.linkedin} target="_blank" rel="noopener noreferrer">IN</a>}
                   {secretary.social.instagram && <a href={secretary.social.instagram} target="_blank" rel="noopener noreferrer">IG</a>}
+                </div>
+              )}
+            </div>
+          </div>
+          <div className={`team-card ${president.className}`}>
+            <div className="team-img-wrap">
+              {president.img ? (
+                <img src={president.img} alt={president.name} className="team-img" />
+              ) : (
+                <div className="team-img team-img-placeholder"></div>
+              )}
+            </div>
+            <div className="team-info">
+              <h3>{president.name}</h3>
+              <p className="team-title">{president.title}</p>
+              <p className="team-desc">{president.desc}</p>
+              {president.social && (Object.values(president.social).some(Boolean)) && (
+                <div className="team-social">
+                  {president.social.facebook && <a href={president.social.facebook} target="_blank" rel="noopener noreferrer">FB</a>}
+                  {president.social.twitter && <a href={president.social.twitter} target="_blank" rel="noopener noreferrer">TW</a>}
+                  {president.social.linkedin && <a href={president.social.linkedin} target="_blank" rel="noopener noreferrer">IN</a>}
+                  {president.social.instagram && <a href={president.social.instagram} target="_blank" rel="noopener noreferrer">IG</a>}
+                </div>
+              )}
+            </div>
+          </div>
+          <div className={`team-card ${treasurer.className}`}>
+            <div className="team-img-wrap">
+              {treasurer.img ? (
+                <img src={treasurer.img} alt={treasurer.name} className="team-img" />
+              ) : (
+                <div className="team-img team-img-placeholder"></div>
+              )}
+            </div>
+            <div className="team-info">
+              <h3>{treasurer.name}</h3>
+              <p className="team-title">{treasurer.title}</p>
+              <p className="team-desc">{treasurer.desc}</p>
+              {treasurer.social && (Object.values(treasurer.social).some(Boolean)) && (
+                <div className="team-social">
+                  {treasurer.social.facebook && <a href={treasurer.social.facebook} target="_blank" rel="noopener noreferrer">FB</a>}
+                  {treasurer.social.twitter && <a href={treasurer.social.twitter} target="_blank" rel="noopener noreferrer">TW</a>}
+                  {treasurer.social.linkedin && <a href={treasurer.social.linkedin} target="_blank" rel="noopener noreferrer">IN</a>}
+                  {treasurer.social.instagram && <a href={treasurer.social.instagram} target="_blank" rel="noopener noreferrer">IG</a>}
                 </div>
               )}
             </div>
